@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ><head>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body 
+  onload="show()">
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container" onsubmit="submitting()" id="theform">
+    <h1>What to ask?</h1>
+
+    <label for="CSS"><b>CSS</b></label>
+    <input type="radio" name="category" value="CSS" id="CSS">
+    <br/>
+    <label for="JS"><b>JS</b></label>
+<input type="radio" name="category" value="JS" id="JS">
+<br/>
+<label for="HTML"><b>HTML</b></label>
+<input type="radio" name="category" value="HTML" id="HTML">
+<br/>
+    <label for="psw"><b>Question</b></label>
+    <input type="text" placeholder="Question for The Guru" name="psw" >
+
+<button id="submittingbutton" type="submit" class="btn">Save</button>
+    <button id="closingbutton" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    <br/>
+<button onclick = "openForm()";>ADD</button>
+<br/>
+<label for="HTML2"><b>HTML</b></label>
+<input type="checkbox" name="category2" value="HTML" id="HTML2" onclick = show()>
+<br/>
+<label for="CSS2"><b>CSS</b></label>
+<input type="checkbox" name="category2" value="CSS" id="CSS2" onclick = show()>
+<br/>
+<label for="JS2"><b>JS</b></label>
+<input type="checkbox" name="category2" value="JS" id="JS2" onclick = show()>
+<label id="arrayMessage"> </label>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
